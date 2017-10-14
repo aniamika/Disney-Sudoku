@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+.flex-container-top {
+  height: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 2px solid red;*/
+  align-items: flex-end;
+}
+
+.flex-container-bottom {
+  height: 50%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: 2px solid red;*/
+  align-items: flex-start;
+}
+
+.left-top-container {
+  display: grid;
+  grid-template-columns: repeat(9, 32px);
+  border-collapse: collapse;
+  justify-content: center;
+  line-height: 0;
+  border-width: 0 1px 1px 0;
+  /*border: 2px solid green;*/
+  flex-direction: row;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.8;
+  /*flex: 1;*/
+}
+
+.right-top-container {
+  display: grid;
+  grid-template-columns: repeat(9, 32px);
+  border-collapse: collapse;
+  justify-content: center;
+  line-height: 0;
+  border-width: 0 1px 1px 0;
+  /*border: 2px solid violet;*/
+  margin-left: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.8;
+  /*flex: 1;*/
+}
+
+.left-bottom-container {
+  display: grid;
+  grid-template-columns: repeat(9, 32px);
+  border-collapse: collapse;
+  justify-content: center;
+  line-height: 0;
+  border-width: 0 1px 1px 0;
+  margin-right: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.right-bottom-container {
+  display: grid;
+  grid-template-columns: repeat(9, 32px);
+  border-collapse: collapse;
+  justify-content: center;
+  line-height: 0;
+  border-width: 0 1px 1px 0;
+  /*border: 2px solid purple;*/
+  /*flex: 1;*/
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.box {
+  border: 1px solid black;
+  margin-right: -1px;
+  margin-bottom: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+
+.border-right {
+  border-right: 3px solid black;
+}
+
+.border-bottom {
+  border-bottom: 3px solid black;
+}
+
+/* reset blue outline */
+.box:focus {
+  outline-width: 0;
+}
+
+.blue {
+  background: rgb(24, 177, 237);
+}
+
+.red {
+  background: rgb(250, 3, 12);
+}
+
+.creamy {
+  background: rgb(252, 198, 151);
+}
+
+.darkgray {
+  background: rgb(46, 42, 41);
+}
+
+.green {
+  background: rgb(3, 173, 85);
+}
+
+.violet {
+  background: rgb(104, 48, 157);
+}
+
+.lightgray {
+  background: rgb(162, 165, 170);
+}
+
+/*.hide {
+  visibility: hidden;
+}*/
