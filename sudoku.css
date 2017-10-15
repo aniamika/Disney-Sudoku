@@ -144,6 +144,9 @@ html, body {
   background: rgb(162, 165, 170);
 }
 
+.yellow {
+  background: rgb(255, 253, 177);
+}
 /*.hide {
   visibility: hidden;
 }*/

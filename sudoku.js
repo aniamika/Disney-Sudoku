@@ -9,7 +9,7 @@ var boxesRightBottomContainer = document.querySelectorAll('.right-bottom-contain
 
 
 function colorize(box) {
-  box.innerText = '';
+        this.innerText = '';
   if ( box.dataset.color == "blue" ) {
     box.style.background = "rgb(24, 177, 237)";
   } else if ( box.dataset.color == "lightgray" ) {
@@ -25,22 +25,32 @@ function colorize(box) {
   } else if ( box.dataset.color == "violet" ) {
     box.style.background = "rgb(104, 48, 157)";
   } else {
-    box.style.background = "rgb(255,255,255)";
+    box.style.background = "rgb(255,253,177)";
   }
 }
+
 
 for ( var i = 0; i < boxes.length; i++ ) {
   boxes[i].addEventListener("keypress", function(event) {
     const keyName = event.key;
 
     if ( keyName == this.dataset.number ) {
+
+      // // give the score when choose correct - only once
+      // if(!scores){
+     // 		 scores = scores + 1;
+      // }
       scores = scores + 1;
       console.log("scores - " + scores)
+      this.innerText = this.dataset.number;
       colorize(this);
-    } else  {
-      // block possibility to tap the wrong answer
-      event.preventDefault();
-      return false;
+      this.setAttribute("contenteditable", false);
+    } else {
+      // // block possibility to tap the wrong answer
+      // event.preventDefault();
+      // return false;
+      this.style.background = "rgb(255,255,255)";
+      this.innerText = '';
     }
   });
 }
