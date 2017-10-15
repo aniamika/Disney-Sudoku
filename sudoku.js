@@ -1,45 +1,12 @@
 
 var boxes = document.querySelectorAll('.box');
 var scores = 0;
-// data-color="blue" data-number="8"
+var bigScores = 0;
+var boxesLeftTopContainer = document.querySelectorAll('.left-top-container .box');
+var boxesRightTopContainer = document.querySelectorAll('.right-top-container .box');
+var boxesLeftBottomContainer = document.querySelectorAll('.left-bottom-container .box');
+var boxesRightBottomContainer = document.querySelectorAll('.right-bottom-container .box');
 
-// for ( var i = 0; i < boxes.length; i++ ) {
-//
-//     boxes[i].addEventListener("keyup", function(event) {
-// // console.log(this.dataset.number)
-// // console.log(this.innerText)
-// // (this.dataset.color == 'blue') &&
-//       if ( this.dataset.number == this.innerText ) {
-//         console.log('dobrze')
-//         this.style.background = "rgb(24, 177, 237)";
-//         this.innerText = '';
-//       }
-//
-//     })
-//
-// function colorize(box) {
-//   if ( box.dataset.color == "blue" ) {
-//     box.style.background = "rgb(24, 177, 237)";
-//     box.innerText = '';
-//   }
-// }
-// colorize(boxes[i])
-
-// var boxesTopLeft = document.querySelectorAll('.left-top-container .box')
-// var sum = 0;
-// console.log(parseInt(boxesTopLeft.innerText))
-// console.log(boxesTopLeft)
-//   for ( var i = 0; i < boxesTopLeft.length; i++ ) {
-//     var cos = parseInt(boxesTopLeft[i].innerText);
-//     sum = sum + cos
-//     // console.log(cos)
-//
-// // if ( boxesTopLeft[1].innerText )
-//   }
-//   console.log(sum)
-// if () {
-//
-// }
 
 function colorize(box) {
   box.innerText = '';
@@ -75,14 +42,62 @@ for ( var i = 0; i < boxes.length; i++ ) {
       event.preventDefault();
       return false;
     }
+  });
+}
+
+  // left top container counter
+  for ( var i=0; i < boxesLeftTopContainer.length; i++ ) {
+      // if one from 4 sudoku is correct
+
+      if ( scores == 5 ) {
+        bigScores += 1
+        console.log( bigScores + ' top left sudoku is correct' );
+        // boxesLeftTopContainer[i].classList.remove("border-right");
+        // console.log(boxesLeftTopContainer.classList)
+        // reset scores
+        scores = 0;
+      }
+  }
 
 
-
-
-
-
-      });
+    // right top container counter
+    for ( var i=0; i < boxesLeftTopContainer.length; i++ ) {
+        // if one from 4 sudoku is correct
+        if ( scores == 45 ) {
+          bigScores += 1
+          console.log( bigScores + ' top right sudoku is correct' );
+          // reset scores
+          scores = 0;
+        }
     }
+
+    // left bottom container counter
+    for ( var i=0; i < boxesLeftBottomContainer.length; i++ ) {
+        // if one from 4 sudoku is correct
+        if ( scores == 45 ) {
+          bigScores += 1
+          console.log( bigScores + ' bottom left sudoku is correct' );
+          // reset scores
+          scores = 0;
+        }
+    }
+
+    // right bottom container counter
+    for ( var i=0; i < boxesRightBottomContainer.length; i++ ) {
+        // if one from 4 sudoku is correct
+        if ( scores == 45 ) {
+          bigScores += 1
+          console.log( bigScores + ' bottom right sudoku is correct' );
+          // reset scores
+          scores = 0;
+        }
+    }
+
+
+
+
+
+
 
 
 
