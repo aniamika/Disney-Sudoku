@@ -118,12 +118,20 @@ function resetBorders() {
 
   for ( var i = 0; i < boxes.length; i++ ) {
     boxes[i].addEventListener("keypress", function(event) {
-      const keyName = event.key;
+      var keyName = event.key;
+
+      // block possibility to tap letters
+      if (keyName !== '0' && keyName != '1' && keyName != '2' && keyName != '3' && keyName != '4' && keyName != '5' && keyName != '6' && keyName != '7' && keyName != '8' && keyName != '9') {
+        event.preventDefault();
+        return false;
+      }
+
 
       if ( keyName == this.dataset.number ) {
         this.innerText = this.dataset.number;
         colorize(this);
         this.setAttribute("contenteditable", false);
+        
         // count scores
         if (this.dataset.position == "leftTop") {
           scoresLeftTop = scoresLeftTop + 1;
@@ -142,9 +150,6 @@ function resetBorders() {
         resetMargins();
         resetBorders();
       } else {
-        // // block possibility to tap the wrong answer
-        // event.preventDefault();
-        // return false;
         // this.style.background = "rgb(255,255,255)";
         this.innerText = '';
       }
