@@ -145,8 +145,13 @@ html, body {
 }
 
 .yellow {
-  background: rgb(255, 253, 177);
+  background: rgb(252, 247, 196);
 }
+
+.lightblue {
+  background: rgb(210, 253, 255);
+}
+
 /*.hide {
   visibility: hidden;
 }*/
