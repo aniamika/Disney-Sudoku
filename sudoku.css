@@ -41,13 +41,11 @@ html, body {
   justify-content: center;
   line-height: 0;
   border-width: 0 1px 1px 0;
-  /*border: 2px solid green;*/
   flex-direction: row;
   margin-right: 20px;
   margin-bottom: 20px;
   text-align: center;
   line-height: 1.8;
-  /*flex: 1;*/
 }
 
 .right-top-container {
@@ -62,7 +60,6 @@ html, body {
   margin-bottom: 20px;
   text-align: center;
   line-height: 1.8;
-  /*flex: 1;*/
 }
 
 .left-bottom-container {
@@ -86,7 +83,6 @@ html, body {
   line-height: 0;
   border-width: 0 1px 1px 0;
   /*border: 2px solid purple;*/
-  /*flex: 1;*/
   margin-left: 20px;
   margin-top: 20px;
   text-align: center;
