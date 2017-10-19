@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
 /*@font-face {
   font-family: "waltograph";
   src: url('font/waltograph.otf') format("opentype");
