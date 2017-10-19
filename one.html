@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DISNEY SUDOKU</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="one.css">
+</head>
+<body>
+
+<div class="main-flex-container">
+  <div class="flex-container">
+
+      <div class="left-top-container">
+        <table>
+          <tr>
+            <td class="box border-top-left blue">3</td>
+            <td class="box" data-position="leftTop" data-color="blue" data-number="8" contenteditable="true"></td>
+            <td class="box border-right" data-position="leftTop" data-color="blue" data-number="1" contenteditable="true"></td>
+            <td class="box" data-position="leftTop" data-color="lightgray" data-number="7" contenteditable="true"></td>
+            <td class="box blue">4</td>
+            <td class="box border-right" data-position="leftTop" data-color="blue" data-number="9" contenteditable="true"></td>
+            <td class="box blue">2</td>
+            <td class="box" data-position="leftTop" data-color="blue" data-number="6" contenteditable="true"></td>
+            <td class="box border-top-right" data-position="leftTop" data-color="blue" data-number="5" contenteditable="true"></td>
+          </tr>
+
+          <tr>
+            <td class="box blue">2</td>
+            <td class="box blue">5</td>
+            <td class="box border-right" data-position="leftTop" data-color="lightgray" data-number="9" contenteditable="true"></td>
+            <td class="box" data-position="leftTop" data-color="blue" data-number="6" contenteditable="true"></td>
+            <td class="box" data-position="leftTop" data-color="blue" data-number="8" contenteditable="true"></td>
+            <td class="box violet border-right">3</td>
+            <td class="box violet">7</td>
+            <td class="box violet">4</td>
+            <td class="box" data-position="leftTop" data-color="violet" data-number="1" contenteditable="true"></td>
+          </tr>
+
+          <tr>
+            <td class="box border-bottom" data-position="leftTop" data-color="blue" data-number="6" contenteditable="true"></td>
+            <td class="box border-bottom" data-position="leftTop" data-color="lightgray" data-number="7" contenteditable="true"></td>
+            <td class="box blue border-right border-bottom">4</td>
+            <td class="box border-bottom" data-position="leftTop" data-color="blue" data-number="2" contenteditable="true"></td>
+            <td class="box darkgray border-bottom">5</td>
+            <td class="box darkgray border-right border-bottom">1</td>
+            <td class="box border-bottom" data-position="leftTop" data-color="violet" data-number="3" contenteditable="true"></td>
+            <td class="box darkgray border-bottom">8</td>
+            <td class="box border-bottom" data-position="leftTop" data-color="darkgray" data-number="9" contenteditable="true"></td>
+          </tr>
+
+          <tr>
+            <td class="box" data-position="leftTop" data-color="blue" data-number="5" contenteditable="true"></td>
+            <td class="box lightgray">3</td>
+            <td class="box border-right" data-position="leftTop" data-color="blue" data-number="8" contenteditable="true"></td>
+            <td class="box" data-position="leftTop" data-color="blue" data-number="4" contenteditable="true"></td>
+            <td class="box creamy">6</td>
+            <td class="box border-right" data-position="leftTop" data-color="creamy" data-number="2" contenteditable="true"></td>
+            <td class="box creamy">9</td>
+            <td class="box" data-color="creamy" data-position="leftTop" data-number="1" contenteditable="true"></td>
+            <td class="box creamy">7</td>
+          </tr>
+
+          <tr>
+            <td class="box" data-position="leftTop" data-color="blue" data-number="1" contenteditable="true"></div>
+            <td class="box lightgray">4</td>
+            <td class="box border-right" data-position="leftTop" data-color="blue" data-number="2" contenteditable="true"></td>
+            <td class="box blue">8</td>
+            <td class="box" data-position="leftTop" data-color="lightblue" data-number="9" contenteditable="true"></td>
+            <td class="box lightblue border-right">7</td>
+            <td class="box" data-position="leftTop" data-color="creamy" data-number="5" contenteditable="true"></td>
+            <td class="box" data-position="leftTop" data-color="lightblue" data-number="3" contenteditable="true"></td>
+            <td class="box" data-position="leftTop" data-color="lightblue" data-number="6" contenteditable="true"></td>
+          </tr>
+
+          <tr>
+            <td class="box border-bottom" data-position="leftTop" data-color="blue" data-number="9" contenteditable="true"></td>
+            <td class="box lightgray border-bottom">6</td>
+            <td class="box border-right border-bottom" data-position="leftTop" data-color="blue" data-number="7" contenteditable="true"></td>
+            <td class="box border-bottom" data-position="leftTop" data-color="blue" data-number="1" contenteditable="true"></td>
+            <td class="box border-bottom" data-position="leftTop" data-color="darkgray" data-number="3" contenteditable="true"></td>
+            <td class="box lightblue border-right border-bottom">5</td>
+            <td class="box creamy border-bottom">4</td>
+            <td class="box darkgray border-bottom">2</td>
+            <td class="box border-bottom" data-position="leftTop" data-color="lightblue" data-number="8" contenteditable="true"></td>
+          </tr>
+
+          <tr>
+            <td class="box blue">7</td>
+            <td class="box" data-position="leftTop" data-color="lightgray" data-number="1" contenteditable="true"></td>
+            <td class="box border-right" data-position="leftTop" data-color="blue" data-number="3" contenteditable="true"></td>
+            <td class="box" data-position="leftTop" data-color="blue" data-number="5" contenteditable="true"></div>
+            <td class="box creamy">2</td>
+            <td class="box creamy border-right">8</td>
+            <td class="box creamy">6</td>
+            <td class="box" data-position="leftTop" data-color="creamy" data-number="9" contenteditable="true"></td>
+            <td class="box" data-position="leftTop" data-color="creamy" data-number="4" contenteditable="true"></td>
+          </tr>
+
+          <tr>
+            <td class="box" data-position="leftTop" data-color="blue" data-number="8" contenteditable="true"></div>
+            <td class="box lightgray">9</td>
+            <td class="box border-right" data-position="leftTop" data-color="blue" data-number="6" contenteditable="true"></td>
+            <td class="box blue">3</td>
+            <td class="box" data-position="leftTop" data-color="creamy" data-number="7" contenteditable="true"></td>
+            <td class="box border-right" data-position="leftTop" data-color="creamy" data-number="4" contenteditable="true"></td>
+            <td class="box" data-position="leftTop" data-color="creamy" data-number="1" contenteditable="true"></td>
+            <td class="box creamy">5</td>
+            <td class="box creamy">2</td>
+          </tr>
+
+          <tr>
+            <td class="box blue">4</td>
+            <td class="box lightgray">2</td>
+            <td class="box border-right" data-position="leftTop" data-color="blue" data-number="5" contenteditable="true"></td>
+            <td class="box" data-position="leftTop" data-color="blue" data-number="9" contenteditable="true"></div>
+            <td class="box yellow">1</td>
+            <td class="box border-right" data-position="leftTop" data-color="yellow" data-number="6" contenteditable="true"></td>
+            <td class="box" data-position="leftTop" data-color="yellow" data-number="8" contenteditable="true"></td>
+            <td class="box yellow">7</td>
+            <td class="box yellow">3</td>
+          </tr>
+        </table>
+    </div>
+
+
+    <div class="right-top-container">
+      <table>
+        <tr>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="6" contenteditable="true"></td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="3" contenteditable="true"></td>
+          <td class="box blue border-right">4</td>
+          <td class="box" data-position="rightTop" data-color="lightgray" data-number="9" contenteditable="true"></td>
+          <td class="box blue">5</td>
+          <td class="box blue border-right">2</td>
+          <td class="box blue">1</td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="7" contenteditable="true"></td>
+          <td class="box blue">8</td>
+        </tr>
+
+        <tr>
+          <td class="box" data-position="rightTop" data-color="violet" data-number="8" contenteditable="true"></td>
+          <td class="box violet">2</td>
+          <td class="box blue border-right">7</td>
+          <td class="box blue">1</td>
+          <td class="box" data-position="rightTop" data-color="lightgray" data-number="3" contenteditable="true"></td>
+          <td class="box border-right" data-position="rightTop" data-color="blue" data-number="6" contenteditable="true"></td>
+          <td class="box blue">4</td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="9" contenteditable="true"></td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="5" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td class="box violet border-bottom">9</td>
+          <td class="box border-bottom" data-position="rightTop" data-color="violet" data-number="1" contenteditable="true"></td>
+          <td class="box border-right border-bottom" data-position="rightTop" data-color="violet" data-number="5" contenteditable="true"></td>
+          <td class="box border-bottom" data-position="rightTop" data-color="blue" data-number="4" contenteditable="true"></td>
+          <td class="box blue border-bottom">7</td>
+          <td class="box border-right border-bottom" data-position="rightTop" data-color="lightgray" data-number="8" contenteditable="true"></td>
+          <td class="box border-bottom" data-position="rightTop" data-color="blue" data-number="2" contenteditable="true"></td>
+          <td class="box blue border-bottom">6</td>
+          <td class="box border-bottom" data-position="rightTop" data-color="blue" data-number="3" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td class="box" data-position="rightTop" data-color="darkgray" data-number="3" contenteditable="true"></td>
+          <td class="box violet">5</td>
+          <td class="box border-right" data-position="rightTop" data-color="violet" data-number="2" contenteditable="true"></td>
+          <td class="box blue">7</td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="1" contenteditable="true"></td>
+          <td class="box lightgray border-right">9</td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="8" contenteditable="true"></td>
+          <td class="box blue">4</td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="6" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td class="box" data-position="rightTop" data-color="creamy" data-number="7" contenteditable="true"></td>
+          <td class="box violet">8</td>
+          <td class="box violet border-right">1</td>
+          <td class="box" data-position="rightTop" data-color="violet" data-number="6" contenteditable="true"></td>
+          <td class="box blue">4</td>
+          <td class="box border-right" data-position="rightTop" data-color="lightgray" data-number="3" contenteditable="true"></td>
+          <td class="box blue">5</td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="2" contenteditable="true"></td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="9" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td class="box creamy border-bottom">4</td>
+          <td class="box border-bottom" data-position="rightTop" data-color="violet" data-number="6" contenteditable="true"></td>
+          <td class="box border-right border-bottom" data-position="rightTop" data-color="violet" data-number="9" contenteditable="true"></td>
+          <td class="box violet border-bottom">8</td>
+          <td class="box border-bottom" data-position="rightTop" data-color="blue" data-number="2" contenteditable="true"></td>
+          <td class="box border-right border-bottom" data-position="rightTop" data-color="lightgray" data-number="5" contenteditable="true"></td>
+          <td class="box blue border-bottom">3</td>
+          <td class="box blue border-bottom">1</td>
+          <td class="box border-bottom" data-position="rightTop" data-color="blue" data-number="7" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td class="box" data-position="rightTop" data-color="creamy" data-number="1" contenteditable="true"></td>
+          <td class="box creamy">7</td>
+          <td class="box border-right" data-position="rightTop" data-color="violet" data-number="8" contenteditable="true"></td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="3" contenteditable="true"></td>
+          <td class="box blue">9</td>
+          <td class="box border-right" data-position="rightTop" data-color="lightgray" data-number="4" contenteditable="true"></td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="6" contenteditable="true"></td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="5" contenteditable="true"></td>
+          <td class="box blue">2</td>
+        </tr>
+
+        <tr>
+          <td class="box creamy">2</td>
+          <td class="box" data-position="rightTop" data-color="creamy" data-number="4" contenteditable="true"></td>
+          <td class="box border-right" data-position="rightTop" data-color="violet" data-number="6" contenteditable="true"></td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="5" contenteditable="true"></td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="8" contenteditable="true"></td>
+          <td class="box lightgray border-right">7</td>
+          <td class="box blue">9</td>
+          <td class="box blue">3</td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="1" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td class="box creamy">5</td>
+          <td class="box" data-position="rightTop" data-color="creamy" data-number="9" contenteditable="true"></td>
+          <td class="box violet border-right">3</td>
+          <td class="box blue">2</td>
+          <td class="box blue">6</td>
+          <td class="box border-right" data-position="rightTop" data-color="lightgray" data-number="1" contenteditable="true"></td>
+          <td class="box blue">7</td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="8" contenteditable="true"></td>
+          <td class="box" data-position="rightTop" data-color="blue" data-number="4" contenteditable="true"></td>
+        </tr>
+      </table>
+  </div>
+
+
+    <div class="left-bottom-container">
+      <table>
+        <tr>
+          <td class="box" data-position="leftBottom" data-position="leftBottom" data-color="blue" data-number="7" contenteditable="true"></td>
+          <td class="box" data-position="leftBottom" data-position="leftBottom" data-color="lightgray" data-number="2" contenteditable="true"></td>
+          <td class="box blue border-right">3</td>
+          <td class="box blue">4</td>
+          <td class="box" data-position="leftBottom" data-position="leftBottom" data-color="creamy" data-number="5" contenteditable="true"></td>
+          <td class="box border-right" data-position="leftBottom" data-position="leftBottom" data-color="yellow" data-number="1" contenteditable="true"></td>
+          <td class="box yellow">8</td>
+          <td class="box" data-position="leftBottom" data-position="leftBottom" data-color="yellow" data-number="6" contenteditable="true"></td>
+          <td class="box creamy">9</td>
+        </tr>
+
+        <tr>
+          <td class="box" data-position="leftBottom" data-color="blue" data-number="9" contenteditable="true"></td>
+          <td class="box blue">1</td>
+          <td class="box lightgray border-right">6</td>
+          <td class="box blue">8</td>
+          <td class="box creamy">2</td>
+          <td class="box border-right" data-position="leftBottom" data-color="creamy" data-number="7" contenteditable="true"></td>
+          <td class="box creamy">3</td>
+          <td class="box" data-position="leftBottom" data-color="creamy" data-number="4" contenteditable="true"></td>
+          <td class="box" data-position="leftBottom" data-color="creamy" data-number="5" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td class="box green border-bottom">4</td>
+          <td class="box border-bottom" data-position="leftBottom" data-color="green" data-number="8" contenteditable="true"></td>
+          <td class="box border-right border-bottom" data-position="leftBottom" data-color="green" data-number="5" contenteditable="true"></td>
+          <td class="box border-bottom" data-position="leftBottom" data-color="lightgray" data-number="3" contenteditable="true"></td>
+          <td class="box violet border-bottom">6</td>
+          <td class="box border-right border-bottom" data-position="leftBottom" data-color="creamy" data-number="9" contenteditable="true"></td>
+          <td class="box border-bottom" data-position="leftBottom" data-color="creamy" data-number="1" contenteditable="true"></td>
+          <td class="box border-bottom" data-position="leftBottom" data-color="creamy" data-number="7" contenteditable="true"></td>
+          <td class="box creamy border-bottom">2</td>
+        </tr>
+
+        <tr>
+          <td class="box" data-position="leftBottom" data-color="blue" data-number="2" contenteditable="true"></td>
+          <td class="box" data-position="leftBottom" data-color="green" data-number="5" contenteditable="true"></td>
+          <td class="box border-right" data-position="leftBottom" data-color="green" data-number="1" contenteditable="true"></td>
+          <td class="box" data-position="leftBottom" data-color="green" data-number="6" contenteditable="true"></td>
+          <td class="box" data-position="leftBottom" data-color="lightgray" data-number="8" contenteditable="true"></td>
+          <td class="box violet border-right">4</td>
+          <td class="box" data-position="leftBottom" data-color="violet" data-number="9" contenteditable="true"></td>
+          <td class="box violet">3</td>
+          <td class="box violet">7</td>
+        </tr>
+
+        <tr>
+          <td class="box blue">6</td>
+          <td class="box green">9</td>
+          <td class="box blue border-right">8</td>
+          <td class="box" data-position="leftBottom" data-color="red" data-number="7" contenteditable="true"></td>
+          <td class="box green">3</td>
+          <td class="box border-right" data-position="leftBottom" data-color="lightgray" data-number="2" contenteditable="true"></td>
+          <td class="box lightgray">5</td>
+          <td class="box lightgray">1</td>
+          <td class="box" data-position="leftBottom" data-color="lightgray" data-number="4" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td class="box border-bottom" data-position="leftBottom" data-color="blue" data-number="3" contenteditable="true"></td>
+          <td class="box border-bottom" data-position="leftBottom" data-color="green" data-number="7" contenteditable="true"></td>
+          <td class="box blue border-right border-bottom">4</td>
+          <td class="box red border-bottom">9</td>
+          <td class="box green border-bottom">1</td>
+          <td class="box border-right border-bottom" data-position="leftBottom" data-color="green" data-number="5" contenteditable="true"></td>
+          <td class="box border-bottom" data-position="leftBottom" data-color="blue" data-number="2" contenteditable="true"></td>
+          <td class="box border-bottom" data-position="leftBottom" data-color="blue" data-number="8" contenteditable="true"></td>
+          <td class="box border-bottom" data-position="leftBottom" data-color="blue" data-number="6" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td class="box" data-position="leftBottom" data-color="darkgray" data-number="8" contenteditable="true"></td>
+          <td class="box" data-position="leftBottom" data-color="blue" data-number="6" contenteditable="true"></td>
+          <td class="box border-right" data-position="leftBottom" data-color="green" data-number="9" contenteditable="true"></td>
+          <td class="box" data-position="leftBottom" data-color="green" data-number="2" contenteditable="true"></td>
+          <td class="box" data-position="leftBottom" data-color="green" data-number="4" contenteditable="true"></td>
+          <td class="box border-right" data-position="leftBottom" data-color="green" data-number="3" contenteditable="true"></td>
+          <td class="box" data-position="leftBottom" data-color="green" data-number="7" contenteditable="true"></td>
+          <td class="box" data-position="leftBottom" data-color="green" data-number="5" contenteditable="true"></td>
+          <td class="box green">1</td>
+        </tr>
+
+        <tr>
+          <td class="box lightgray">1</td>
+          <td class="box" data-position="leftBottom" data-color="darkgray" data-number="3" contenteditable="true"></td>
+          <td class="box blue border-right">7</td>
+          <td class="box green">5</td>
+          <td class="box green">9</td>
+          <td class="box green border-right">6</td>
+          <td class="box green">4</td>
+          <td class="box green">2</td>
+          <td class="box" data-position="leftBottom" data-color="green" data-number="8" contenteditable="true"></td>
+        </tr>
+
+        <tr>
+          <td class="box blue">5</td>
+          <td class="box" data-position="leftBottom" data-color="blue" data-number="4" contenteditable="true"></td>
+          <td class="box blue border-right">2</td>
+          <td class="box" data-position="leftBottom" data-color="blue" data-number="1" contenteditable="true"></td>
+          <td class="box violet">7</td>
+          <td class="box border-right" data-position="leftBottom" data-color="violet" data-number="8" contenteditable="true"></td>
+          <td class="box violet">6</td>
+          <td class="box" data-position="leftBottom" data-color="violet" data-number="9" contenteditable="true"></td>
+          <td class="box" data-position="leftBottom" data-color="violet" data-number="3" contenteditable="true"></td>
+        </tr>
+      </table>
+  </div>
+
+
+        <div class="right-bottom-container">
+          <table>
+            <tr>
+              <td class="box" data-position="rightBottom" data-color="creamy" data-number="8" contenteditable="true"></td>
+              <td class="box creamy">1</td>
+              <td class="box violet border-right">5</td>
+              <td class="box" data-position="rightBottom" data-color="blue" data-number="3" contenteditable="true"></td>
+              <td class="box blue">7</td>
+              <td class="box border-right" data-position="rightBottom" data-color="lightgray" data-number="2" contenteditable="true"></td>
+              <td class="box" data-position="rightBottom" data-color="blue" data-number="6" contenteditable="true"></td>
+              <td class="box" data-position="rightBottom" data-color="blue" data-number="4" contenteditable="true"></td>
+              <td class="box blue">9</td>
+            </tr>
+
+            <tr>
+              <td class="box" data-position="rightBottom" data-color="creamy" data-number="7" contenteditable="true"></td>
+              <td class="box violet">4</td>
+              <td class="box border-right" data-position="rightBottom" data-color="violet" data-number="3" contenteditable="true"></td>
+              <td class="box lightgray">5</td>
+              <td class="box lightgray">6</td>
+              <td class="box blue border-right">9</td>
+              <td class="box" data-position="rightBottom" data-color="blue" data-number="2" contenteditable="true"></td>
+              <td class="box" data-position="rightBottom" data-color="blue" data-number="8" contenteditable="true"></td>
+              <td class="box blue">1</td>
+            </tr>
+
+            <tr>
+              <td class="box violet border-bottom">2</td>
+              <td class="box border-bottom" data-position="rightBottom" data-color="violet" data-number="9" contenteditable="true"></td>
+              <td class="box border-right border-bottom" data-position="rightBottom" data-color="lightgray" data-number="6" contenteditable="true"></td>
+              <td class="box border-bottom" data-position="rightBottom" data-color="green" data-number="1" contenteditable="true"></td>
+              <td class="box border-bottom" data-position="rightBottom" data-color="green" data-number="4" contenteditable="true"></td>
+              <td class="box border-right border-bottom" data-position="rightBottom" data-color="green" data-number="8" contenteditable="true"></td>
+              <td class="box border-bottom" data-position="rightBottom" data-color="green" data-number="7" contenteditable="true"></td>
+              <td class="box green border-bottom">5</td>
+              <td class="box blue border-bottom">3</td>
+            </tr>
+
+            <tr>
+              <td class="box" data-position="rightBottom" data-color="violet" data-number="5" contenteditable="true"></td>
+              <td class="box lightgray">6</td>
+              <td class="box border-right" data-position="rightBottom" data-color="green" data-number="2"  contenteditable="true"></td>
+              <td class="box" data-position="rightBottom" data-color="green" data-number="8" contenteditable="true"></td>
+              <td class="box green">9</td>
+              <td class="box border-right" data-position="rightBottom" data-color="green" data-number="7" contenteditable="true"></td>
+              <td class="box" data-position="rightBottom" data-color="green" data-number="3" contenteditable="true"></td>
+              <td class="box blue">1</td>
+              <td class="box blue">4</td>
+            </tr>
+
+            <tr>
+              <td class="box lightgray">4</td>
+              <td class="box" data-position="rightBottom" data-color="green" data-number="8" contenteditable="true"></td>
+              <td class="box red border-right">1</td>
+              <td class="box" data-position="rightBottom" data-color="red" data-number="6" contenteditable="true"></td>
+              <td class="box" data-position="rightBottom" data-color="green" data-number="3" contenteditable="true"></td>
+              <td class="box blue border-right">5</td>
+              <td class="box" data-position="rightBottom" data-color="blue" data-number="9" contenteditable="true"></td>
+              <td class="box" data-position="rightBottom" data-color="darkgray" data-number="7" contenteditable="true"></td>
+              <td class="box darkgray">2</td>
+            </tr>
+
+            <tr>
+              <td class="box green border-bottom">3</td>
+              <td class="box border-bottom" data-position="rightBottom" data-color="green" data-number="7" contenteditable="true"></td>
+              <td class="box border-right border-bottom" data-position="rightBottom" data-color="red" data-number="9" contenteditable="true"></td>
+              <td class="box red border-bottom">2</td>
+              <td class="box green border-bottom">1</td>
+              <td class="box border-right border-bottom" data-position="rightBottom" data-color="blue" data-number="4" contenteditable="true"></td>
+              <td class="box border-bottom" data-position="rightBottom" data-color="darkgray" data-number="5" contenteditable="true"></td>
+              <td class="box lightgray border-bottom">6</td>
+              <td class="box border-bottom" data-position="rightBottom" data-color="lightgray" data-number="8" contenteditable="true"></td>
+            </tr>
+
+            <tr>
+              <td class="box" data-position="rightBottom" data-color="green" data-number="9" contenteditable="true"></td>
+              <td class="box green">3</td>
+              <td class="box border-right" data-position="rightBottom" data-color="green" data-number="8" contenteditable="true"></td>
+              <td class="box green">4</td>
+              <td class="box" data-position="rightBottom" data-color="green" data-number="5" contenteditable="true"></td>
+              <td class="box border-right" data-position="rightBottom" data-color="blue" data-number="6" contenteditable="true"></td>
+              <td class="box" data-position="rightBottom" data-color="darkgray" data-number="1" contenteditable="true"></td>
+              <td class="box" data-position="rightBottom" data-color="lightgray" data-number="2" contenteditable="true"></td>
+              <td class="box lightgray">7</td>
+            </tr>
+
+            <tr>
+              <td class="box green">1</td>
+              <td class="box green">5</td>
+              <td class="box border-right" data-position="rightBottom" data-color="green" data-number="4" contenteditable="true"></td>
+              <td class="box blue">7</td>
+              <td class="box" data-position="rightBottom" data-color="blue" data-number="2" contenteditable="true"></td>
+              <td class="box blue border-right">3</td>
+              <td class="box" data-position="rightBottom" data-color="darkgray" data-number="8" contenteditable="true"></td>
+              <td class="box lightgray">9</td>
+              <td class="box" data-position="rightBottom" data-color="blue" data-number="6" contenteditable="true"></td>
+            </tr>
+
+            <tr>
+              <td class="box violet">6</td>
+              <td class="box" data-position="rightBottom" data-color="violet" data-number="2" contenteditable="true"></td>
+              <td class="box border-right" data-position="rightBottom" data-color="violet" data-number="7" contenteditable="true"></td>
+              <td class="box" data-position="rightBottom" data-color="blue" data-number="9" contenteditable="true"></td>
+              <td class="box blue">8</td>
+              <td class="box border-right" data-position="rightBottom" data-color="blue" data-number="1" contenteditable="true"></td>
+              <td class="box blue">4</td>
+              <td class="box blue">3</td>
+              <td class="box" data-position="rightBottom" data-color="blue" data-number="5" contenteditable="true"></td>
+            </tr>
+          </table>
+      </div>
+
+
+  </div>
+</div>
+<!--
+<div class="flex-container-top">
+
+
+
+
+
+</div>
+
+<div class="flex-container-bottom">
+
+
+</div> -->
+
+<!--
+    <div id="stripe">
+        <button id='reset'>new colors</button>
+        <span id="message"></span>
+    </div>
+
+
+    <div id="container1">
+        <div class="square blue"></div>
+        <div class="square lightgray"></div>
+        <div class="square violet"></div>
+        <div class="square creamy"></div>
+        <div class="square darkgray"></div>
+        <div class="square green"></div>
+        <div class="square red"></div>
+    </div>
+
+-->
+
+<!--
+    <div id="container2">
+        <h1>choose <span id="colorDisplay">RGB</span> color</h1>
+    </div>
+-->
+
+
+<script type="text/javascript" src="one.js"></script>
+</body>
+</html>
