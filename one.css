@@ -13,9 +13,8 @@ html, body {
 }
 
 .header {
-  padding-left: 3%;
-  padding-top: 3%;
-  padding-right: 3%;
+  height: 10%;
+  padding: 2%;
   /*border: 4px solid pink;*/
   display: flex;
   align-items: center;
@@ -41,7 +40,7 @@ span {
 }
 
 .main-flex-container {
-  height: 100%;
+  height: 90%;
   /*border: 5px solid pink;*/
   display: flex;
   align-items: center;
