@@ -160,20 +160,16 @@ td {
   background: rgb(3, 173, 85);
 }
 
-.violet {
-  background: rgb(104, 48, 157);
-}
-
-.lightgray {
-  background: rgb(162, 165, 170);
-}
-
 .yellow {
   background: rgb(252, 247, 196);
 }
 
 .lightblue {
   background: rgb(210, 253, 255);
+}
+
+.darkyellow {
+  background: rgb(255, 192, 0);
 }
 
 /*.hide {

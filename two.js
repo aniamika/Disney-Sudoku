@@ -6,14 +6,13 @@ var boxesLeftBottomContainer = document.querySelectorAll('.left-bottom-container
 var boxesRightBottomContainer = document.querySelectorAll('.right-bottom-container .box');
 
 var blueBoxes = document.querySelectorAll('.blue');
-var lightgrayBoxes = document.querySelectorAll('.lightgray');
 var redBoxes = document.querySelectorAll('.red');
 var creamyBoxes = document.querySelectorAll('.creamy');
 var darkgrayBoxes = document.querySelectorAll('.darkgray');
 var greenBoxes = document.querySelectorAll('.green');
-var violetBoxes = document.querySelectorAll('.violet');
 var yellowBoxes = document.querySelectorAll('.yellow');
 var lightblueBoxes = document.querySelectorAll('.lightblue');
+var darkyellowBoxes = document.querySelectorAll('.darkyellow');
 
 var scoresLeftTop = 0;
 var scoresRightTop = 0;
@@ -21,20 +20,18 @@ var scoresLeftBottom = 0;
 var scoresRightBottom = 0;
 
 
-// go to page with second sudoku
+
+// go to page with three sudoku page
 function win() {
-  if (scoresLeftTop == 45 && scoresRightTop == 45 && scoresLeftBottom == 45 && scoresRightBottom == 45)  {
-  window.location.href = 'two.html';
+  if (scoresLeftTop == 44 && scoresRightTop == 54 && scoresLeftBottom == 55 && scoresRightBottom == 52)  {
+  window.location.href = 'three.html';
   }
 }
-
 
 function colorize(box) {
   this.innerText = '';
   if ( box.dataset.color == "blue" ) {
     box.style.background = "rgb(24, 177, 237)";
-  } else if ( box.dataset.color == "lightgray" ) {
-    box.style.background = "rgb(162, 165, 170)";
   } else if ( box.dataset.color == "red" ) {
     box.style.background = "rgb(250, 3, 12)";
   } else if ( box.dataset.color == "creamy" ) {
@@ -43,18 +40,18 @@ function colorize(box) {
     box.style.background = "rgb(46, 42, 41)";
   } else if ( box.dataset.color == "green" ) {
     box.style.background = "rgb(3, 173, 85)";
-  } else if ( box.dataset.color == "violet" ) {
-    box.style.background = "rgb(104, 48, 157)";
   } else if ( box.dataset.color == "yellow" ) {
     box.style.background = "rgb(252, 247, 196)";
-  } else {
+  } else if ( box.dataset.color == "lightblue" ) {
     box.style.background = "rgb(210, 253, 255)";
+  } else {
+    box.style.background = "rgb(255, 192, 0)";
   }
 }
 
 // reset margins when finished all 4 sudoku
 function resetMargins() {
-  if (scoresLeftTop == 45 && scoresRightTop == 45 && scoresLeftBottom == 45 && scoresRightBottom == 45) {
+  if (scoresLeftTop == 44 && scoresRightTop == 54 && scoresLeftBottom == 55 && scoresRightBottom == 52) {
     document.querySelector('.left-top-container').style.marginLeft = "0";
     document.querySelector('.left-top-container').style.marginTop = "0";
     document.querySelector('.left-top-container').style.marginBottom = "-1px";
@@ -79,22 +76,22 @@ function resetMargins() {
 
 // reset innerText when finished one sudoku
 function resetInnerText() {
-  if (scoresLeftTop == 45) {
+  if (scoresLeftTop == 44) {
     for(var i=0; i<boxesLeftTopContainer.length; i++) {
       boxesLeftTopContainer[i].innerText = '';
     }
   }
-  if (scoresRightTop == 45) {
+  if (scoresRightTop == 54) {
     for(var i=0; i<boxesRightTopContainer.length; i++) {
       boxesRightTopContainer[i].innerText = '';
     }
   }
-  if (scoresLeftBottom == 45) {
+  if (scoresLeftBottom == 55) {
     for(var i=0; i<boxesLeftBottomContainer.length; i++) {
       boxesLeftBottomContainer[i].innerText = '';
     }
   }
-  if (scoresRightBottom == 45) {
+  if (scoresRightBottom == 52) {
     for(var i=0; i<boxesRightBottomContainer.length; i++) {
       boxesRightBottomContainer[i].innerText = '';
     }
@@ -103,25 +100,25 @@ function resetInnerText() {
 
 // reset borders when finished all 4 sudoku
 function resetBorders() {
-  if (scoresLeftTop == 45) {
+  if (scoresLeftTop == 44) {
     for (var i=0; i<boxesLeftTopContainer.length; i++) {
       boxesLeftTopContainer[i].classList.remove('border-bottom');
       boxesLeftTopContainer[i].classList.remove('border-right');
     }
   }
-  if (scoresRightTop == 45) {
+  if (scoresRightTop == 54) {
     for (var i=0; i<boxesRightTopContainer.length; i++) {
       boxesRightTopContainer[i].classList.remove('border-bottom');
       boxesRightTopContainer[i].classList.remove('border-right');
     }
   }
-  if (scoresLeftBottom == 45) {
+  if (scoresLeftBottom == 55) {
     for (var i=0; i<boxesLeftBottomContainer.length; i++) {
       boxesLeftBottomContainer[i].classList.remove('border-bottom');
       boxesLeftBottomContainer[i].classList.remove('border-right');
     }
   }
-  if (scoresRightBottom == 45) {
+  if (scoresRightBottom == 52) {
     for (var i=0; i<boxesRightBottomContainer.length; i++) {
       boxesRightBottomContainer[i].classList.remove('border-bottom');
       boxesRightBottomContainer[i].classList.remove('border-right');
