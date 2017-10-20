@@ -48,7 +48,7 @@ span {
   display: flex;
   /*border: 10px solid goldenrod;*/
   max-width: 696px;
-  min-width: 696px;
+  /*min-width: 696px;*/
   font-family: sans-serif;
   flex-wrap:wrap;
   align-items: center;
