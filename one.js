@@ -20,6 +20,8 @@ var scoresRightTop = 0;
 var scoresLeftBottom = 0;
 var scoresRightBottom = 0;
 
+
+
 // // hide colors untill one sudoku is done
 // function hideColors() {
 //   for(var i=0; i<blueBoxes.length; i++) {
@@ -110,10 +112,25 @@ function colorize(box) {
 // reset margins when finished all 4 sudoku
 function resetMargins() {
   if (scoresLeftTop == 45 && scoresRightTop == 45 && scoresLeftBottom == 45 && scoresRightBottom == 45) {
-    document.querySelector('.left-top-container').style.margin = "0";
-    document.querySelector('.right-top-container').style.margin = "0";
-    document.querySelector('.left-bottom-container').style.margin = "0";
-    document.querySelector('.right-bottom-container').style.margin = "0";
+    document.querySelector('.left-top-container').style.marginLeft = "0";
+    document.querySelector('.left-top-container').style.marginTop = "0";
+    document.querySelector('.left-top-container').style.marginBottom = "-1px";
+    document.querySelector('.left-top-container').style.marginRight = "-1px";
+
+    document.querySelector('.right-top-container').style.marginLeft = "-1px";
+    document.querySelector('.right-top-container').style.marginBottom = "-1px";
+    document.querySelector('.right-top-container').style.marginRight = "0";
+    document.querySelector('.right-top-container').style.marginTop = "0";
+
+    document.querySelector('.left-bottom-container').style.marginLeft = "0";
+    document.querySelector('.left-bottom-container').style.marginTop = "-1px";
+    document.querySelector('.left-bottom-container').style.marginRight = "-1px";
+    document.querySelector('.left-bottom-container').style.marginBottom = "0";
+
+    document.querySelector('.right-bottom-container').style.marginLeft = "-1px";
+    document.querySelector('.right-bottom-container').style.marginTop = "-1px";
+    document.querySelector('.right-bottom-container').style.marginRight = "0";
+    document.querySelector('.right-bottom-container').style.marginBottom = "0";
   }
 }
 
@@ -143,25 +160,25 @@ function resetInnerText() {
 
 // reset borders when finished all 4 sudoku
 function resetBorders() {
-  if (scoresLeftTop == 45) {
+  if (scoresLeftTop == 5) {
     for (var i=0; i<boxesLeftTopContainer.length; i++) {
       boxesLeftTopContainer[i].classList.remove('border-bottom');
       boxesLeftTopContainer[i].classList.remove('border-right');
     }
   }
-  if (scoresRightTop == 45) {
+  if (scoresRightTop == 5) {
     for (var i=0; i<boxesRightTopContainer.length; i++) {
       boxesRightTopContainer[i].classList.remove('border-bottom');
       boxesRightTopContainer[i].classList.remove('border-right');
     }
   }
-  if (scoresLeftBottom == 45) {
+  if (scoresLeftBottom == 5) {
     for (var i=0; i<boxesLeftBottomContainer.length; i++) {
       boxesLeftBottomContainer[i].classList.remove('border-bottom');
       boxesLeftBottomContainer[i].classList.remove('border-right');
     }
   }
-  if (scoresRightBottom == 45) {
+  if (scoresRightBottom == 5) {
     for (var i=0; i<boxesRightBottomContainer.length; i++) {
       boxesRightBottomContainer[i].classList.remove('border-bottom');
       boxesRightBottomContainer[i].classList.remove('border-right');

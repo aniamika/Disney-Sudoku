@@ -36,7 +36,6 @@ html, body {
 
 span {
   font-size: 30px;
-
 }
 
 .main-flex-container {
@@ -61,17 +60,21 @@ span {
 
 table {
   border-collapse: collapse;
-}
-
-table, td, th {
   border: 2px solid black;
 }
+
+/*table {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}*/
 
 td {
   width: 32px;
   height: 30px;
   border: 2px solid black;
-  font-weight: 500;
+  /*font-weight: 500;*/
   /*font-family: "waltograph", sans-serif*/
 }
 
@@ -83,26 +86,13 @@ td {
   border-bottom: 4px solid black;
 }
 
-/*.border-top-left {
-  border-top: 2px solid black;
-  border-left: 2px solid black;
-}
-
-.border-top-right {
-  border-top: 2px solid black;
-  border-right: 2px solid black;
-}*/
-/*.box + .box{
-    border-left: 0;
-    border-top: 0;
-}*/
-
 .left-top-container {
-  display: flex;
-  min-width: 306px;
+  /*display: flex;*/
+  /*min-width: 306px;*/
   max-width: 306px;
   flex-wrap:wrap;
   /*border: 1px solid blue;*/
+  /*border-width: 0 1px 1px 0;*/
   text-align: center;
   line-height: 1.8;
   margin-top: 20px;
@@ -112,45 +102,39 @@ td {
 }
 
 .right-top-container {
-  display: flex;
-  min-width: 306px;
+  /*display: flex;*/
+  /*min-width: 306px;*/
   max-width: 306px;
   flex-wrap:wrap;
+  /*border-width: 0 1px 1px 0;*/
   /*border: 1px solid red;*/
   text-align: center;
   line-height: 1.8;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 20px;
 }
 
 .left-bottom-container {
-  display: flex;
-  min-width: 306px;
+  /*display: flex;*/
+  /*min-width: 306px;*/
   max-width: 306px;
   flex-wrap:wrap;
   /*border: 1px solid green;*/
+  /*border-width: 0 1px 1px 0;*/
   text-align: center;
   line-height: 1.8;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 20px;
 }
 
 .right-bottom-container {
-  display: flex;
-  min-width: 306px;
+  /*display: flex;*/
+  /*min-width: 306px;*/
   max-width: 306px;
   flex-wrap:wrap;
   /*border: 1px solid violet;*/
+  /*border-width: 0 1px 1px 0;*/
   text-align: center;
   line-height: 1.8;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin: 20px;
 }
 
 /* reset blue outline */
