@@ -160,25 +160,25 @@ function resetInnerText() {
 
 // reset borders when finished all 4 sudoku
 function resetBorders() {
-  if (scoresLeftTop == 5) {
+  if (scoresLeftTop == 45) {
     for (var i=0; i<boxesLeftTopContainer.length; i++) {
       boxesLeftTopContainer[i].classList.remove('border-bottom');
       boxesLeftTopContainer[i].classList.remove('border-right');
     }
   }
-  if (scoresRightTop == 5) {
+  if (scoresRightTop == 45) {
     for (var i=0; i<boxesRightTopContainer.length; i++) {
       boxesRightTopContainer[i].classList.remove('border-bottom');
       boxesRightTopContainer[i].classList.remove('border-right');
     }
   }
-  if (scoresLeftBottom == 5) {
+  if (scoresLeftBottom == 45) {
     for (var i=0; i<boxesLeftBottomContainer.length; i++) {
       boxesLeftBottomContainer[i].classList.remove('border-bottom');
       boxesLeftBottomContainer[i].classList.remove('border-right');
     }
   }
-  if (scoresRightBottom == 5) {
+  if (scoresRightBottom == 45) {
     for (var i=0; i<boxesRightBottomContainer.length; i++) {
       boxesRightBottomContainer[i].classList.remove('border-bottom');
       boxesRightBottomContainer[i].classList.remove('border-right');
