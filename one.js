@@ -168,6 +168,7 @@ function resetBorders() {
         this.value = this.dataset.number;
         // colorize square
         colorize(this);
+        console.log(this)
         // block square editable
         this.disabled = true;
         // this.setAttribute("contenteditable", false);
