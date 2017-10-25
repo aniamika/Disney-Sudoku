@@ -1,9 +1,19 @@
 
 var boxes = document.querySelectorAll('.box');
-var boxesLeftTopContainer = document.querySelectorAll('.left-top-container .box');
-var boxesRightTopContainer = document.querySelectorAll('.right-top-container .box');
-var boxesLeftBottomContainer = document.querySelectorAll('.left-bottom-container .box');
-var boxesRightBottomContainer = document.querySelectorAll('.right-bottom-container .box');
+var boxesLeftTopContainer = document.querySelectorAll('.left-top-container input.box');
+var boxesRightTopContainer = document.querySelectorAll('.right-top-container input.box');
+var boxesLeftBottomContainer = document.querySelectorAll('.left-bottom-container input.box');
+var boxesRightBottomContainer = document.querySelectorAll('.right-bottom-container input.box');
+
+var LeftTopContainer = document.querySelectorAll('.left-top-container .box');
+var RightTopContainer = document.querySelectorAll('.right-top-container .box');
+var LeftBottomContainer = document.querySelectorAll('.left-bottom-container .box');
+var RightBottomContainer = document.querySelectorAll('.right-bottom-container .box');
+
+var tdLeftTopContainer = document.querySelectorAll('.left-top-container td');
+var tdRightTopContainer = document.querySelectorAll('.right-top-container td');
+var tdLeftBottomContainer = document.querySelectorAll('.left-bottom-container td');
+var tdRightBottomContainer = document.querySelectorAll('.right-bottom-container td');
 
 var blueBoxes = document.querySelectorAll('.blue');
 var lightgrayBoxes = document.querySelectorAll('.lightgray');
@@ -30,7 +40,8 @@ function win() {
 
 
 function colorize(box) {
-  this.innerText = '';
+  // this.innerText = '';
+  // this.value = '';
   if ( box.dataset.color == "blue" ) {
     box.style.background = "rgb(24, 177, 237)";
   } else if ( box.dataset.color == "lightgray" ) {
@@ -81,22 +92,34 @@ function resetMargins() {
 function resetInnerText() {
   if (scoresLeftTop == 45) {
     for(var i=0; i<boxesLeftTopContainer.length; i++) {
-      boxesLeftTopContainer[i].innerText = '';
+      boxesLeftTopContainer[i].value = '';
+    }
+    for(var i=0; i<LeftTopContainer.length; i++) {
+      LeftTopContainer[i].innerText = '';
     }
   }
   if (scoresRightTop == 45) {
     for(var i=0; i<boxesRightTopContainer.length; i++) {
-      boxesRightTopContainer[i].innerText = '';
+      boxesRightTopContainer[i].value = '';
+    }
+    for(var i=0; i<RightTopContainer.length; i++) {
+      RightTopContainer[i].innerText = '';
     }
   }
   if (scoresLeftBottom == 45) {
     for(var i=0; i<boxesLeftBottomContainer.length; i++) {
-      boxesLeftBottomContainer[i].innerText = '';
+      boxesLeftBottomContainer[i].value = '';
+    }
+    for(var i=0; i<LeftBottomContainer.length; i++) {
+      LeftBottomContainer[i].innerText = '';
     }
   }
   if (scoresRightBottom == 45) {
     for(var i=0; i<boxesRightBottomContainer.length; i++) {
-      boxesRightBottomContainer[i].innerText = '';
+      boxesRightBottomContainer[i].value = '';
+    }
+    for(var i=0; i<RightBottomContainer.length; i++) {
+      RightBottomContainer[i].innerText = '';
     }
   }
 }
@@ -104,27 +127,27 @@ function resetInnerText() {
 // reset borders when finished all 4 sudoku
 function resetBorders() {
   if (scoresLeftTop == 45) {
-    for (var i=0; i<boxesLeftTopContainer.length; i++) {
-      boxesLeftTopContainer[i].classList.remove('border-bottom');
-      boxesLeftTopContainer[i].classList.remove('border-right');
+    for (var i=0; i<tdLeftTopContainer.length; i++) {
+      tdLeftTopContainer[i].classList.remove('border-bottom');
+      tdLeftTopContainer[i].classList.remove('border-right');
     }
   }
   if (scoresRightTop == 45) {
-    for (var i=0; i<boxesRightTopContainer.length; i++) {
-      boxesRightTopContainer[i].classList.remove('border-bottom');
-      boxesRightTopContainer[i].classList.remove('border-right');
+    for (var i=0; i<tdRightTopContainer.length; i++) {
+      tdRightTopContainer[i].classList.remove('border-bottom');
+      tdRightTopContainer[i].classList.remove('border-right');
     }
   }
   if (scoresLeftBottom == 45) {
-    for (var i=0; i<boxesLeftBottomContainer.length; i++) {
-      boxesLeftBottomContainer[i].classList.remove('border-bottom');
-      boxesLeftBottomContainer[i].classList.remove('border-right');
+    for (var i=0; i<tdLeftBottomContainer.length; i++) {
+      tdLeftBottomContainer[i].classList.remove('border-bottom');
+      tdLeftBottomContainer[i].classList.remove('border-right');
     }
   }
   if (scoresRightBottom == 45) {
-    for (var i=0; i<boxesRightBottomContainer.length; i++) {
-      boxesRightBottomContainer[i].classList.remove('border-bottom');
-      boxesRightBottomContainer[i].classList.remove('border-right');
+    for (var i=0; i<tdRightBottomContainer.length; i++) {
+      tdRightBottomContainer[i].classList.remove('border-bottom');
+      tdRightBottomContainer[i].classList.remove('border-right');
     }
   }
 }
@@ -142,11 +165,15 @@ function resetBorders() {
 
       // if press key is the same as dataset number
       if ( keyName == this.dataset.number ) {
-        this.innerText = this.dataset.number;
-        // colrize square
+        this.value = this.dataset.number;
+        // colorize square
         colorize(this);
         // block square editable
-        this.setAttribute("contenteditable", false);
+        this.disabled = true;
+        // this.setAttribute("contenteditable", false);
+        // event.preventDefault();
+
+
 
         // count scores
         if (this.dataset.position == "leftTop") {
@@ -167,7 +194,8 @@ function resetBorders() {
         resetBorders();
         win();
       } else {
-        this.innerText = '';
+        // this.innerText = '';
+        this.value = '';
       }
 
     });

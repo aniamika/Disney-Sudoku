@@ -181,3 +181,57 @@ td {
 /*.hide {
   visibility: hidden;
 }*/
+
+
+input {
+  /*width: 32px;
+  height: 30px;*/
+  text-align: center;
+  line-height:1.8;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+}
+
+input[disabled] {
+   color: black;
+}
+
+
+/* reset for inputs */
+input {
+	margin:0;
+	border:0;
+	padding:0;
+	display:inline-block;
+	vertical-align:middle;
+	white-space:normal;
+	background:none;
+
+	/* Browsers have different default form fonts */
+	/*font-size:13px;
+	font-family:Arial;*/
+}
+
+/* Remove the stupid outer glow in Webkit */
+input:focus
+{
+	outline:0;
+}
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+
+/* All of our custom controls should be what we expect them to be */
+input {
+	-webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	box-sizing:content-box;
+}
+
+/* turn off number input spinners */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
